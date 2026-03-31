@@ -1,0 +1,43 @@
+influencers:
+  # === Your primary ===
+  - username: "thuancapital"
+    priority: 1
+
+  # === Political figures ===
+  - username: "realDonaldTrump"
+    priority: 1
+  - username: "nayibbukele"
+    priority: 2
+  - username: "SenLummis"
+    priority: 2
+  - username: "DavidSacks47"
+    priority: 2
+
+  # === Billionaires & business leaders ===
+  - username: "elonmusk"
+    priority: 1
+  - username: "saylor"
+    priority: 1
+  - username: "cz_binance"
+    priority: 1
+  - username: "VitalikButerin"
+    priority: 1
+  - username: "CathieDWood"
+    priority: 2
+  - username: "brian_armstrong"
+    priority: 2
+
+tokens:
+  - symbol: "BTC"
+    aliases: ["bitcoin", "$BTC"]
+  - symbol: "SOL"
+    aliases: ["solana", "$SOL"]
+  - symbol: "ETH"
+    aliases: ["ethereum", "$ETH"]
+
+hashtags:
+  - "#crypto"
+  - "#defi"
+  - "#memecoins"
+  - "#hacked"
+  - "#exploit"

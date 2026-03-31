@@ -1,0 +1,9 @@
+jobs:
+  timeline:
+    interval: "*/10 * * * *"
+    batch_size: 20
+  search:
+    interval: "*/15 * * * *"
+    batch_size: 50
+  trends:
+    interval: "0 * * * *"

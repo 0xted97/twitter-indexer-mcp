@@ -1,0 +1,24 @@
+telegram:
+  bot_token: "${TELEGRAM_BOT_TOKEN}"
+  chat_id: "${TELEGRAM_CHAT_ID}"
+
+rules:
+  - name: "high_priority_post"
+    trigger: "influencer_post"
+    condition:
+      priority: [1, 2]
+    message: "{{username}} just tweeted:\n{{text}}"
+
+  - name: "token_spike"
+    trigger: "mention_spike"
+    condition:
+      min_increase_pct: 200
+      window: "1h"
+    message: "${{symbol}} mentions spiked {{increase_pct}}% in the last hour"
+
+  - name: "keyword_alert"
+    trigger: "keyword_match"
+    condition:
+      keywords: ["listing", "airdrop", "hack", "exploit"]
+      min_followers: 10000
+    message: "Keyword '{{keyword}}' from @{{username}}:\n{{text}}"
